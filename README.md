@@ -1,11 +1,12 @@
-Predicting Medical Costs with Custom Linear Regression
-This project focuses on building a Linear Regression model to predict medical insurance charges based on personal and lifestyle attributes such as age, gender, BMI, number of children, smoking status, and region. It involves complete data preprocessing, exploratory data analysis (EDA), model training, and evaluation — without using scikit-learn's LinearRegression implementation.
+ Predicting Medical Costs with Custom Linear Regression
+This project focuses on building a Linear Regression model from scratch to predict medical insurance charges based on personal and lifestyle attributes such as age, gender, BMI, number of children, smoking status, and region.
 
-📁 Dataset
-Source: insurance.csv
+It includes complete data preprocessing, exploratory data analysis (EDA), manual model training, and evaluation — all without using scikit-learn's LinearRegression.
+
+📁 Dataset Source
+insurance.csv
 
 Features:
-
 age: Age of the person
 
 sex: Gender (male/female)
@@ -23,18 +24,17 @@ charges: Target variable – individual medical costs billed by health insurance
 📊 Exploratory Data Analysis (EDA)
 Performed visual and statistical analysis to understand feature relationships:
 
-Histograms for continuous feature distribution
+📈 Histograms for continuous feature distribution
 
-Bar plots of categorical features vs charges
+📊 Bar plots of categorical features vs. charges
 
-Boxplots to detect outliers
+📦 Boxplots to detect outliers
 
-Correlation heatmap
+🔥 Correlation heatmap
 
-Pairplots for selected numerical features
+🔗 Pairplots for selected numerical features
 
-Insights:
-
+🔍 Key Insights:
 Smokers have significantly higher insurance charges
 
 Charges increase with age and BMI
@@ -52,57 +52,50 @@ Optional scaling with StandardScaler
 
 Binning applied to age (if explored)
 
-Considered log-transformation of the target variable for skew correction
+Log transformation considered for skew correction on target (charges)
 
 🧠 Model Training
-Algorithm: Linear Regression implemented from scratch
+Algorithm: Linear Regression implemented manually using NumPy
 
-Built the Linear Regression model manually using NumPy (no use of sklearn.linear_model.LinearRegression)
+No use of sklearn.linear_model.LinearRegression
 
-Calculated weights using the closed-form equation:
+Weights calculated using the closed-form solution:
 
 𝑤
 =
 (
 𝑋
-⊤
+𝑇
 𝑋
 )
 −
 1
 𝑋
-⊤
+𝑇
 𝑦
-w=(X 
-⊤
- X) 
-−1
- X 
-⊤
- y
+
+
 Train/Test Split: 80/20
 
 📈 Model Evaluation
 Metrics:
-
 R² Score
 
 Root Mean Squared Error (RMSE)
 
 Mean Absolute Error (MAE)
 
-Visualized predictions vs actual values
-
-Compared performance on train and test sets
+📉 Visualized predictions vs. actual values
+🔍 Compared performance on training and test sets
 
 📌 Additional Analysis
 Extracted and interpreted model coefficients manually
 
 Explored feature importance
 
-Checked if there's overfitting or underfitting
+Evaluated for overfitting/underfitting
 
-Cross-validation for robustness
+Performed cross-validation for robustness
 
 🛠️ Tech Stack
 Python
@@ -111,12 +104,11 @@ pandas, numpy
 
 seaborn, matplotlib
 
-Manual implementation of algorithms without scikit-learn's modeling
-
+Manual algorithm implementation (No scikit-learn for modeling)
 
 📚 References
-Kaggle Dataset
+Kaggle - Medical Cost Personal Datasets
 
- Author
+👩‍💻 Author
 Mariyam Muzammil
 📎 @mariyamzx

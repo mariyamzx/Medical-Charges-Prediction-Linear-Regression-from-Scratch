@@ -1,0 +1,7 @@
+[theme]
+base="dark"
+primaryColor="#a1887f"         # Soft brown
+backgroundColor="#1e1e1e"      # Dark gray background
+secondaryBackgroundColor="#2c2c2c"  # Slightly lighter dark gray for containers
+textColor="#f5f5f5"            # Light gray/white text
+font="sans serif"

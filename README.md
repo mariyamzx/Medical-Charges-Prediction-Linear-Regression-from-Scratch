@@ -55,7 +55,7 @@ Performed **visual and statistical analysis** to understand feature relationship
 - No use of `sklearn.linear_model.LinearRegression`  
 - Weights calculated using the **closed-form solution**:  
  
-  {w} = (X^T X)^{-1} X^T y
+  **w = (Xᵀ X)⁻¹ Xᵀ y**
   
 
 - **Train/Test Split**: 80/20  
@@ -83,22 +83,58 @@ Performed **visual and statistical analysis** to understand feature relationship
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Streamlit Web App
 
-- **Python**  
-- `pandas`, `numpy`  
-- `seaborn`, `matplotlib`  
-- **Manual algorithm implementation** (No scikit-learn for modeling)
+A **Streamlit app** is included to interactively predict insurance costs based on user inputs.
 
----
+### ▶️ How to Run
 
-## 📚 References
+```bash
+streamlit run app/main.py
+Enter input values (age, gender, BMI, children, smoker status, region) and receive predicted charges instantly.
 
-- [Kaggle - Medical Cost Personal Datasets](https://www.kaggle.com/datasets/mirichoi0218/insurance)
+📦 Installation
+Install all dependencies:
 
----
 
-## 👩‍💻 Author
+pip install -r requirements.txt
+requirements.txt includes:
 
-**Mariyam Muzammil**  
-[📎 @mariyamzx](https://github.com/mariyamzx)  
+numpy==2.3.2
+pandas==2.3.1
+streamlit==1.47.1
+scikit-learn==1.7.1
+seaborn==0.13.2
+matplotlib==3.10.3
+🗂️ Project Structure
+
+insurance/
+├── app/
+│   ├── LinearReg.py         # Custom linear regression class
+│   └── main.py              # Streamlit app entry point
+├── .streamlit/
+│   └──config.toml
+├── insurance.csv            # Dataset
+├── insurance_pipeline.pkl   # Saved preprocessed pipeline
+├── notebook(2).ipynb
+├── requirements.txt
+└── README.md
+
+
+🛠️ Tech Stack
+Python
+
+numpy, pandas
+
+seaborn, matplotlib
+
+streamlit
+
+Manual model implementation (no sklearn for modeling)
+
+📚 References
+Kaggle - Medical Cost Personal Datasets
+
+👩‍💻 Author
+Mariyam Muzammil
+📎 @mariyamzx

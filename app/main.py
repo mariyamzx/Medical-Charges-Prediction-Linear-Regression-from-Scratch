@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
-from app.LinearReg import LinearRegression  # important for unpickling!
+from LinearReg import LinearRegression  # important for unpickling!
 
 # Configure the Streamlit page
 st.set_page_config(

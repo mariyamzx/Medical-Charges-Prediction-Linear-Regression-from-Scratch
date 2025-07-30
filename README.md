@@ -87,19 +87,14 @@ Performed **visual and statistical analysis** to understand feature relationship
 
 A **Streamlit app** is included to interactively predict insurance costs based on user inputs.
 
+
 ## Sample Screenshot:
 <img width="1907" height="888" alt="image" src="https://github.com/user-attachments/assets/ae85e859-31cf-4197-9457-6525755eda0c" />
 
+## How to run
+python -m streamlit run app/main.py
 
-### ▶️ How to Run
-
-```bash
-streamlit run app/main.py
-Enter input values (age, gender, BMI, children, smoker status, region) and receive predicted charges instantly.
-
----
-
-📦 Installation
+## 📦 Installation
 Install all dependencies:
 
 
@@ -112,7 +107,8 @@ streamlit==1.47.1
 scikit-learn==1.7.1
 seaborn==0.13.2
 matplotlib==3.10.3
-🗂️ Project Structure
+
+## 🗂️ Project Structure
 
 insurance/
 ├── app/
@@ -127,7 +123,7 @@ insurance/
 └── README.md
 
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 Python
 
 numpy, pandas
@@ -138,9 +134,9 @@ streamlit
 
 Manual model implementation (no sklearn for modeling)
 
-📚 References
+## 📚 References
 Kaggle - Medical Cost Personal Datasets
 
-👩‍💻 Author
+## 👩‍💻 Author
 Mariyam Muzammil
 📎 @mariyamzx

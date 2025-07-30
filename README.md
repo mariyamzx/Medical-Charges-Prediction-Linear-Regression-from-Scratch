@@ -87,11 +87,17 @@ Performed **visual and statistical analysis** to understand feature relationship
 
 A **Streamlit app** is included to interactively predict insurance costs based on user inputs.
 
+## Sample Screenshot:
+<img width="1907" height="888" alt="image" src="https://github.com/user-attachments/assets/ae85e859-31cf-4197-9457-6525755eda0c" />
+
+
 ### ▶️ How to Run
 
 ```bash
 streamlit run app/main.py
 Enter input values (age, gender, BMI, children, smoker status, region) and receive predicted charges instantly.
+
+---
 
 📦 Installation
 Install all dependencies:
